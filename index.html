@@ -1,21 +1,22 @@
-<html>
+<script type="text/javascript">
+  function blink() {
+    var blinks = document.getElementsByTagName('blink');
+    for (var i = blinks.length - 1; i >= 0; i--) {
+      var s = blinks[i];
+      s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+    }
+    window.setTimeout(blink, 500);
+  }
+  if (document.addEventListener) document.addEventListener("DOMContentLoaded", blink, false);
+  else if (window.addEventListener) window.addEventListener("load", blink, false);
+  else if (window.attachEvent) window.attachEvent("onload", blink);
+  else window.onload = blink;
+</script>
 
-    <head>
-        <title> Test </title>
-    </head>
-
-    <body>
-        <center> <img src="webring.png"/> </center>
-
-        <h1>
-            <center> Hello </center>
-
-            <a href="https://michaelsongagradstudent.github.io"> Mick </a>
-
-            <a href="https://barneypotteragradstudent.github.io"> Barney </a>
-
-        </h1>
-
-        <img src="interested.png"/>
-    </body>
-</html> 
+<h1>Hello, And</h1>
+<p><blink> <img alt="" src="webring.png" /> </blink> </p>
+<p>i am a graduate student and
+<img alt="" src="interested.png" /></p>
+<p>Other people's Personal Web Pages:</p>
+<p><a href="https://michaelsongagradstudent.github.io">Mick</a></p>
+<p><a href="https://barneypotteragradstudent.github.io">Barney</a></p>
